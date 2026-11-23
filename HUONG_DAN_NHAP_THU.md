@@ -5,10 +5,13 @@ Tài liệu này hướng dẫn từng bước để bạn tự tay nhập thử
 ---
 
 ## Bước 0: Khởi động hệ thống
-Mở PowerShell và chạy:
+Mở terminal tại thư mục gốc của dự án (sau khi đã cài đặt theo `README.md`) và chạy:
 ```powershell
-cd C:\Users\synvi\.gemini\antigravity\scratch\accounting-ai-agent
+# Windows (PowerShell)
 .\.venv\Scripts\uvicorn.exe app.main:app --reload --port 8000
+
+# macOS / Linux
+source .venv/bin/activate && uvicorn app.main:app --reload --port 8000
 ```
 Mở trình duyệt tại: **http://localhost:8000**
 
