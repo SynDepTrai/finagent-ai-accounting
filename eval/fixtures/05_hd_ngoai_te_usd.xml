@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HDon>
+  <DLHDon Id="ID5">
+    <TTChung>
+      <KHMSHDon>1</KHMSHDon>
+      <KHHDon>C26TFX</KHHDon>
+      <SHDon>00009001</SHDon>
+      <NLap>2026-10-21</NLap>
+      <DVTTe>USD</DVTTe>
+      <TGia>25400</TGia>
+      <HTTToan>CK</HTTToan>
+    </TTChung>
+    <NDHDon>
+      <NBan>
+        <Ten>CÔNG TY TNHH LOGISTICS QUỐC TẾ SAO MAI</Ten>
+        <MST>0300588569</MST>
+      </NBan>
+      <NMua>
+        <Ten>CÔNG TY TNHH CÔNG NGHỆ MINH ANH</Ten>
+        <MST>0101243150</MST>
+      </NMua>
+      <DSHHDVu>
+        <HHDVu>
+          <TChat>1</TChat>
+          <STT>1</STT>
+          <THHDVu>Cước vận chuyển đường biển quốc tế</THHDVu>
+          <DVTinh>Lô</DVTinh>
+          <SLuong>1</SLuong>
+          <DGia>1000</DGia>
+          <STCKhau>0</STCKhau>
+          <ThTien>1000</ThTien>
+          <TSuat>0%</TSuat>
+          <TThue>0</TThue>
+        </HHDVu>
+      </DSHHDVu>
+      <TToan>
+        <TgTCThue>1000</TgTCThue>
+        <TTCKTMai>0</TTCKTMai>
+        <TgTThue>0</TgTThue>
+        <TgTTTBSo>1000</TgTTTBSo>
+      </TToan>
+    </NDHDon>
+  </DLHDon>
+  <DSCKS><NBan><Signature><SignatureValue>SIG_OK==</SignatureValue></Signature></NBan></DSCKS>
+</HDon>
