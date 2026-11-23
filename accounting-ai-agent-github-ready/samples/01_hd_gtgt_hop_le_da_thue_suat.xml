@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HDon>
+  <DLHDon Id="ID1">
+    <TTChung>
+      <PBan>2.0.1</PBan>
+      <THDon>HÓA ĐƠN GIÁ TRỊ GIA TĂNG</THDon>
+      <KHMSHDon>1</KHMSHDon>
+      <KHHDon>C26THH</KHHDon>
+      <SHDon>00001234</SHDon>
+      <NLap>2026-10-15</NLap>
+      <DVTTe>VND</DVTTe>
+      <TGia>1</TGia>
+      <HTTToan>TM/CK</HTTToan>
+    </TTChung>
+    <NDHDon>
+      <NBan>
+        <Ten>CÔNG TY CỔ PHẦN VĂN PHÒNG PHẨM HỒNG HÀ</Ten>
+        <MST>0100109106</MST>
+        <DChi>25 Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội</DChi>
+        <STKNHang>0011004567890</STKNHang>
+      </NBan>
+      <NMua>
+        <Ten>CÔNG TY TNHH CÔNG NGHỆ MINH ANH</Ten>
+        <MST>0101243150</MST>
+        <DChi>Tầng 5, 120 Cầu Giấy, Hà Nội</DChi>
+      </NMua>
+      <DSHHDVu>
+        <HHDVu>
+          <TChat>1</TChat>
+          <STT>1</STT>
+          <MHHDVu>VPP-A4-DA</MHHDVu>
+          <THHDVu>Giấy in A4 Double A 80gsm</THHDVu>
+          <DVTinh>Ram</DVTinh>
+          <SLuong>50</SLuong>
+          <DGia>80000</DGia>
+          <STCKhau>0</STCKhau>
+          <ThTien>4000000</ThTien>
+          <TSuat>8%</TSuat>
+          <TThue>320000</TThue>
+        </HHDVu>
+        <HHDVu>
+          <TChat>1</TChat>
+          <STT>2</STT>
+          <MHHDVu>MUC-HP107A</MHHDVu>
+          <THHDVu>Mực in laser HP 107A chính hãng</THHDVu>
+          <DVTinh>Hộp</DVTinh>
+          <SLuong>1</SLuong>
+          <DGia>1000000</DGia>
+          <STCKhau>0</STCKhau>
+          <ThTien>1000000</ThTien>
+          <TSuat>10%</TSuat>
+          <TThue>100000</TThue>
+        </HHDVu>
+        <HHDVu>
+          <TChat>1</TChat>
+          <STT>3</STT>
+          <THHDVu>Phí vận chuyển giao hàng nội thành</THHDVu>
+          <DVTinh>Chuyến</DVTinh>
+          <SLuong>1</SLuong>
+          <DGia>40000</DGia>
+          <STCKhau>0</STCKhau>
+          <ThTien>40000</ThTien>
+          <TSuat>0%</TSuat>
+          <TThue>0</TThue>
+        </HHDVu>
+      </DSHHDVu>
+      <TToan>
+        <TgTCThue>5040000</TgTCThue>
+        <TTCKTMai>0</TTCKTMai>
+        <TgTThue>420000</TgTThue>
+        <TgTTTBSo>5460000</TgTTTBSo>
+        <TgTTTBChu>Năm triệu bốn trăm sáu mươi nghìn đồng chẵn</TgTTTBChu>
+      </TToan>
+    </NDHDon>
+  </DLHDon>
+  <MCCQT>00C26THH00001234998877665544332211</MCCQT>
+  <DSCKS>
+    <NBan>
+      <Signature>
+        <SignatureValue>MIIGfQYJKoZIhvcNAQcCoIIGbjCCBmoCAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAa==</SignatureValue>
+      </Signature>
+    </NBan>
+  </DSCKS>
+</HDon>

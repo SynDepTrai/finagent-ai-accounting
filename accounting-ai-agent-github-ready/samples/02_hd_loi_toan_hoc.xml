@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HDon>
+  <DLHDon Id="ID2">
+    <TTChung>
+      <PBan>2.0.1</PBan>
+      <THDon>HÓA ĐƠN GIÁ TRỊ GIA TĂNG</THDon>
+      <KHMSHDon>1</KHMSHDon>
+      <KHHDon>C26TVC</KHHDon>
+      <SHDon>00005599</SHDon>
+      <NLap>2026-10-18</NLap>
+      <DVTTe>VND</DVTTe>
+      <TGia>1</TGia>
+      <HTTToan>CK</HTTToan>
+    </TTChung>
+    <NDHDon>
+      <NBan>
+        <Ten>CÔNG TY TNHH DỊCH VỤ VẬN TẢI ĐÔNG NAM</Ten>
+        <MST>0300588569</MST>
+        <DChi>18 Nguyễn Huệ, Quận 1, TP.HCM</DChi>
+      </NBan>
+      <NMua>
+        <Ten>CÔNG TY TNHH CÔNG NGHỆ MINH ANH</Ten>
+        <MST>0101243150</MST>
+        <DChi>Tầng 5, 120 Cầu Giấy, Hà Nội</DChi>
+      </NMua>
+      <DSHHDVu>
+        <HHDVu>
+          <TChat>1</TChat>
+          <STT>1</STT>
+          <THHDVu>Cước vận chuyển hàng hoá tháng 10/2026</THHDVu>
+          <DVTinh>Chuyến</DVTinh>
+          <SLuong>10</SLuong>
+          <DGia>250000</DGia>
+          <STCKhau>0</STCKhau>
+          <ThTien>2400000</ThTien>
+          <TSuat>8%</TSuat>
+          <TThue>192000</TThue>
+        </HHDVu>
+      </DSHHDVu>
+      <TToan>
+        <TgTCThue>2400000</TgTCThue>
+        <TTCKTMai>0</TTCKTMai>
+        <TgTThue>192000</TgTThue>
+        <TgTTTBSo>2692000</TgTTTBSo>
+      </TToan>
+    </NDHDon>
+  </DLHDon>
+  <MCCQT>00C26TVC00005599112233445566778899</MCCQT>
+  <DSCKS>
+    <NBan>
+      <Signature>
+        <SignatureValue>VALID_DEMO_SIGNATURE_VALUE_BASE64==</SignatureValue>
+      </Signature>
+    </NBan>
+  </DSCKS>
+</HDon>

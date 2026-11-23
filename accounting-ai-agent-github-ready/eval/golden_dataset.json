@@ -1,0 +1,125 @@
+{
+  "dataset_version": "1.0.0",
+  "acceptance_gates": {
+    "header_field_accuracy": 0.995,
+    "line_item_accuracy": 0.96,
+    "rule_engine_recall": 1.0,
+    "rule_engine_false_positive_rate": 0.0,
+    "coding_top1_accuracy": 0.8,
+    "recon_false_positive_rate": 0.05,
+    "p95_latency_ms": 2000.0
+  },
+  "cases": [
+    {
+      "id": "case_01_multi_vat_3way",
+      "file": "samples/01_hd_gtgt_hop_le_da_thue_suat.xml",
+      "expected_header": {
+        "series": "C26THH",
+        "invoice_number": "00001234",
+        "issue_date": "2026-10-15",
+        "seller_tax_code": "0100109106",
+        "subtotal": 5040000.0,
+        "total_vat": 420000.0,
+        "grand_total": 5460000.0
+      },
+      "expected_lines": [
+        {"line_no": 1, "amount_before_tax": 4000000.0, "vat_rate": "8%", "vat_amount": 320000.0, "debit_account": "6423"},
+        {"line_no": 2, "amount_before_tax": 1000000.0, "vat_rate": "10%", "vat_amount": 100000.0, "debit_account": "6423"},
+        {"line_no": 3, "amount_before_tax": 40000.0, "vat_rate": "0%", "vat_amount": 0.0, "debit_account": "6417"}
+      ],
+      "expected_error_codes": [],
+      "reconciliation_ref": {"doc_type": "PO", "ref_code": "PO-EVAL-01", "vendor_tax_code": "0100109106", "doc_date": "2026-10-14", "total_amount": 5460000.0},
+      "expected_recon_status": "MATCHED"
+    },
+    {
+      "id": "case_02_math_error",
+      "file": "samples/02_hd_loi_toan_hoc.xml",
+      "expected_header": {
+        "series": "C26TVC",
+        "invoice_number": "00005599",
+        "issue_date": "2026-10-18",
+        "seller_tax_code": "0300588569",
+        "subtotal": 2400000.0,
+        "total_vat": 192000.0,
+        "grand_total": 2692000.0
+      },
+      "expected_lines": [
+        {"line_no": 1, "amount_before_tax": 2400000.0, "vat_rate": "8%", "vat_amount": 192000.0, "debit_account": "6417"}
+      ],
+      "expected_error_codes": ["LINE_MATH_MISMATCH", "GRAND_TOTAL_MISMATCH"]
+    },
+    {
+      "id": "case_03_replacement",
+      "file": "samples/03_hd_thay_the_tt78.xml",
+      "expected_header": {
+        "series": "C26TVC",
+        "invoice_number": "00005600",
+        "issue_date": "2026-10-19",
+        "seller_tax_code": "0300588569",
+        "subtotal": 2500000.0,
+        "total_vat": 200000.0,
+        "grand_total": 2700000.0
+      },
+      "expected_lines": [
+        {"line_no": 1, "amount_before_tax": 2500000.0, "vat_rate": "8%", "vat_amount": 200000.0, "debit_account": "6417"}
+      ],
+      "expected_error_codes": [],
+      "expected_warning_codes": ["RELATED_INVOICE_ALERT"],
+      "reconciliation_ref": {"doc_type": "BANK_STMT", "ref_code": "VCB-EVAL-03", "vendor_tax_code": "0300588569", "doc_date": "2026-10-20", "total_amount": 2699500.0, "note": "TT HD 00005600"},
+      "expected_recon_status": "MINOR_DIFF"
+    },
+    {
+      "id": "case_04_discount_kct",
+      "file": "eval/fixtures/04_hd_chiet_khau_kct.xml",
+      "expected_header": {
+        "series": "C26TCK",
+        "invoice_number": "00008801",
+        "issue_date": "2026-10-20",
+        "seller_tax_code": "0100109106",
+        "subtotal": 9500000.0,
+        "total_vat": 0.0,
+        "grand_total": 9500000.0
+      },
+      "expected_lines": [
+        {"line_no": 1, "amount_before_tax": 10000000.0, "vat_rate": "KCT", "vat_amount": 0.0, "debit_account": "6427"},
+        {"line_no": 2, "amount_before_tax": 500000.0, "vat_rate": "KCT", "vat_amount": 0.0, "debit_account": "6427"}
+      ],
+      "expected_error_codes": []
+    },
+    {
+      "id": "case_05_foreign_currency_usd",
+      "file": "eval/fixtures/05_hd_ngoai_te_usd.xml",
+      "expected_header": {
+        "series": "C26TFX",
+        "invoice_number": "00009001",
+        "issue_date": "2026-10-21",
+        "seller_tax_code": "0300588569",
+        "subtotal": 1000.0,
+        "total_vat": 0.0,
+        "grand_total": 1000.0
+      },
+      "expected_lines": [
+        {"line_no": 1, "amount_before_tax": 1000.0, "vat_rate": "0%", "vat_amount": 0.0, "debit_account": "6417"}
+      ],
+      "expected_journal_vnd_amount": 25400000.0,
+      "expected_error_codes": []
+    },
+    {
+      "id": "case_06_bad_mst_and_missing_fx",
+      "file": "eval/fixtures/06_hd_mst_sai_va_thieu_ty_gia.xml",
+      "expected_header": {
+        "series": "C26TER",
+        "invoice_number": "00009999",
+        "issue_date": "2026-10-22",
+        "seller_tax_code": "0100109107",
+        "subtotal": 500.0,
+        "total_vat": 0.0,
+        "grand_total": 500.0
+      },
+      "expected_lines": [
+        {"line_no": 1, "amount_before_tax": 500.0, "vat_rate": "0%", "vat_amount": 0.0, "debit_account": "6427"}
+      ],
+      "expected_error_codes": ["INVALID_SELLER_MST", "MISSING_EXCHANGE_RATE"]
+    }
+  ]
+}

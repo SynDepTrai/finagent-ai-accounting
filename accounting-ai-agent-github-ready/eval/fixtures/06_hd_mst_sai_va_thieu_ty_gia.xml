@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HDon>
+  <DLHDon Id="ID6">
+    <TTChung>
+      <KHMSHDon>1</KHMSHDon>
+      <KHHDon>C26TER</KHHDon>
+      <SHDon>00009999</SHDon>
+      <NLap>2026-10-22</NLap>
+      <DVTTe>USD</DVTTe>
+      <TGia>1</TGia>
+      <HTTToan>CK</HTTToan>
+    </TTChung>
+    <NDHDon>
+      <NBan>
+        <Ten>CÔNG TY TNHH KIỂM THỬ LỖI MST</Ten>
+        <MST>0100109107</MST>
+      </NBan>
+      <NMua>
+        <Ten>CÔNG TY TNHH CÔNG NGHỆ MINH ANH</Ten>
+        <MST>0101243150</MST>
+      </NMua>
+      <DSHHDVu>
+        <HHDVu>
+          <TChat>1</TChat>
+          <STT>1</STT>
+          <THHDVu>Phí dịch vụ tư vấn</THHDVu>
+          <DVTinh>Gói</DVTinh>
+          <SLuong>1</SLuong>
+          <DGia>500</DGia>
+          <ThTien>500</ThTien>
+          <TSuat>0%</TSuat>
+          <TThue>0</TThue>
+        </HHDVu>
+      </DSHHDVu>
+      <TToan>
+        <TgTCThue>500</TgTCThue>
+        <TgTThue>0</TgTThue>
+        <TgTTTBSo>500</TgTTTBSo>
+      </TToan>
+    </NDHDon>
+  </DLHDon>
+  <DSCKS><NBan><Signature><SignatureValue>SIG_OK==</SignatureValue></Signature></NBan></DSCKS>
+</HDon>
